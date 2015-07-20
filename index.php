@@ -10,9 +10,6 @@
 <title>PAGE TITLE</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<link rel="shortcut icon" href="">
-
-<link rel="apple-touch-icon-precomposed" href="" />
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
