@@ -1,33 +1,34 @@
-@charset "utf-8";
-#wrapper{
-	position:relative;
-	top:0;
-	left:0;
-	z-index:10;
-	
-	padding: 0;
-	margin: 0;
+@charset "UTF-8";
+/* line 2, ../sass/share.scss */
+#wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
 }
 
-#contents{
-	width: 980px;
-	margin: 0 auto;
-	text-align: center; /*例*/
-	
-	background: #f00;
-}
-
-@media screen and (min-width: 640px) {
+/* line 12, ../sass/share.scss */
+#contents {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  /*例*/
+  background: #f00;
 }
 
 @media screen and (max-width: 639px) {
-	img.wide{
-		width: 100%;
-		height: auto;
-	}
-	
-	#contents{
-		width: 100%;
-		text-align: left; /*例*/
-	}
+  /* line 24, ../sass/share.scss */
+  img.wide {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 29, ../sass/share.scss */
+  #contents {
+    width: 100%;
+    text-align: left;
+    /*例*/
+  }
 }
