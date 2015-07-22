@@ -1,2 +1,20 @@
 ErrorDocument 403 /403.php
 ErrorDocument 404 /404.php
+
+ErrorDocument 503 /503.php
+
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{REQUEST_URI} !=/503.php
+#  RewriteCond %{REMOTE_ADDR} !=222.146.248.165
+#  RewriteCond %{REQUEST_URI} !^/ir/*.*$
+#  RewriteCond %{REQUEST_URI} !^/js/*.*$
+#  RewriteCond %{REQUEST_URI} !^/css/*.*$
+#  RewriteCond %{REQUEST_URI} !^/images/*.*$
+#  RewriteCond %{REQUEST_URI} !^/global/*.*$
+#  RewriteRule ^.*$ - [R=503,L]
+#</IfModule>
+#
+#<IfModule mod_headers.c>
+#  Header set Retry-After "Fri, 15 March 2013 9:00:00 GMT"
+#</IfModule>
