@@ -45,7 +45,6 @@ if (typeof window.console === 'undefined') {
 }
 
 
-
 /*hover a img
 *********************************************/
 $(function(){
@@ -54,6 +53,21 @@ $("a img").not('.not_hover').hover(function(){
 },function(){
     $(this).stop().fadeTo(300, 1);
 });
+});
+
+
+/*clickable
+*********************************************/
+$(function(){
+    $(".clickable").children().each(function(i){
+        var a=$(this).find('a');
+        if(a.length>0 && a.attr('href')){
+            $(this).click(function(e){
+                e.preventDefault();
+                location.href=a.attr('href');
+            });
+        }
+    });
 });
 
 
