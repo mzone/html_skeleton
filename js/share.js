@@ -56,6 +56,20 @@ $("a img").not('.not_hover').hover(function(){
 });
 
 
+/**
+ *  isset
+ *  @param  data    値
+ *  @return         true / false
+ *
+ */
+var isset = function(data){
+    if(data === "" || data === null || data === undefined){
+        return false;
+    }else{
+        return true;
+    }
+};
+
 /*clickable
 *********************************************/
 $(function(){
